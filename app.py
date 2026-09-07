@@ -18,6 +18,7 @@ import io
 import json
 import re
 import textwrap
+import time
 import traceback
 from datetime import datetime
 
@@ -31,6 +32,7 @@ import streamlit as st
 
 from google import genai
 from google.genai import types
+from google.genai import errors as genai_errors
 
 
 # ----------------------------------------------------------------------
@@ -259,15 +261,59 @@ def fig_to_png_bytes(fig) -> bytes:
     return buf.read()
 
 
+def send_message_with_backoff(prompt: str, max_retries: int = 4, base_delay: float = 2.0):
+    """Calls chat.send_message, retrying with exponential backoff on
+    transient server-side failures (503 'model overloaded', 429 rate limit,
+    etc). Raises the underlying exception if it never recovers, so the
+    caller can show a friendly message instead of the app crashing."""
+    last_error = None
+    for i in range(max_retries):
+        try:
+            return st.session_state.chat.send_message(prompt)
+        except genai_errors.ServerError as e:
+            # 500/503 — Google's servers are overloaded or briefly down.
+            last_error = e
+        except genai_errors.ClientError as e:
+            # 429 = rate limited; anything else (400, 401, 403...) is not
+            # transient, so don't waste time retrying those.
+            if getattr(e, "code", None) != 429:
+                raise
+            last_error = e
+        delay = base_delay * (2 ** i)
+        time.sleep(delay)
+    raise last_error
+
+
 def ask_gemini_with_retry(prompt: str, df: pd.DataFrame, max_attempts: int = 3):
     """Sends prompt to Gemini, executes the code, and if it errors, feeds the
     traceback back to Gemini asking it to fix it (shown to the student as a
-    'the AI is debugging itself' moment)."""
+    'the AI is debugging itself' moment).
+
+    Two very different failure modes are handled here:
+    - The GENERATED CODE is buggy -> fed back to Gemini to self-correct.
+    - The API CALL ITSELF fails (Google's servers overloaded, rate limited,
+      etc) -> retried with backoff; if it still fails, we return a single
+      'api_error' step instead of letting the exception crash the app.
+    """
     attempts = []
     current_prompt = prompt
 
     for attempt_num in range(1, max_attempts + 1):
-        response = st.session_state.chat.send_message(current_prompt)
+        try:
+            response = send_message_with_backoff(current_prompt)
+        except Exception as e:
+            attempts.append({
+                "attempt": attempt_num,
+                "explanation": "",
+                "code": "",
+                "success": False,
+                "kind": "api_error",
+                "payload": None,
+                "stdout": "",
+                "error": str(e),
+            })
+            break
+
         explanation, code = parse_gemini_response(response.text)
         success, kind, payload, stdout_text, error_text = run_generated_code(code, df)
 
@@ -309,6 +355,16 @@ def render_step_output(step, key_prefix):
         st.text(step["payload"])
     elif step["kind"] == "error":
         st.error(f"Execution failed:\n\n{step['error']}")
+    elif step["kind"] == "api_error":
+        st.warning(
+            "🌐 Gemini's servers didn't respond after several retries "
+            "(this is usually the free-tier model being briefly overloaded "
+            "or rate-limited, not a bug in your question). "
+            "Wait a few seconds and re-type your question, or try the "
+            "`gemini-2.5-flash-lite` model in the sidebar, which has looser "
+            "free-tier limits.\n\n"
+            f"Details: {step['error']}"
+        )
     elif step["kind"] == "none":
         st.caption("(Code ran with no visible output.)")
 
