@@ -145,6 +145,12 @@ def build_system_instruction(df: pd.DataFrame) -> str:
     - Keep code short, correct, and beginner-readable. Add short comments.
     - Work defensively: if a column looks numeric but might be stored as text
       (e.g. "2,711,075" or "2h 22m"), clean it first before analysis.
+    - If a categorical column can contain MULTIPLE comma-separated values in
+      one cell (e.g. genre = "Action, Crime, Drama"), split and explode it
+      into individual values before counting/plotting categories, so each
+      movie's three genres each get counted rather than "Action, Crime,
+      Drama" being treated as one combined category. Only skip this if the
+      student explicitly asks for the raw combined values.
     - Only use column names that actually exist in the dataset above.
 
     RESPONSE FORMAT — you must reply with EXACTLY this structure, nothing else,
@@ -222,17 +228,25 @@ def run_generated_code(code: str, df: pd.DataFrame):
         return False, "error", None, "", "Blocked: generated code used a disallowed operation."
 
     plt.close("all")
-    local_env = {
+    # IMPORTANT: use a SINGLE namespace dict for both globals and locals.
+    # If globals/locals are passed as two separate dicts, exec() treats the
+    # code like a class body: any `def` written inside it only closes over
+    # the globals dict, not the locals dict — so a helper function that
+    # references pd/np/sns (very common when Gemini writes a cleaning
+    # function for messy columns) raises NameError even though those names
+    # are clearly available at the top level of the same code block.
+    exec_namespace = {
         "df": df.copy(),
         "pd": pd,
         "np": np,
         "plt": plt,
         "sns": sns,
+        "__builtins__": __builtins__,
     }
     stdout_capture = io.StringIO()
     try:
         with contextlib.redirect_stdout(stdout_capture):
-            exec(code, {"__builtins__": __builtins__}, local_env)
+            exec(code, exec_namespace)
     except Exception:
         return False, "error", None, stdout_capture.getvalue(), traceback.format_exc()
 
@@ -244,8 +258,8 @@ def run_generated_code(code: str, df: pd.DataFrame):
         return True, "figure", fig, stdout_text, ""
 
     # Priority 2: an explicit `result` variable
-    if "result" in local_env and local_env["result"] is not None:
-        return True, "result", local_env["result"], stdout_text, ""
+    if "result" in exec_namespace and exec_namespace["result"] is not None:
+        return True, "result", exec_namespace["result"], stdout_text, ""
 
     # Priority 3: just printed output
     if stdout_text.strip():
