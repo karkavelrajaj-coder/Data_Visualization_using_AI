@@ -69,6 +69,7 @@ def init_state():
     defaults = {
         "df": None,
         "df_name": None,
+        "genai_client": None,
         "chat": None,
         "history": [],       # list of dicts describing each step (for UI + notebook export)
         "api_key": "",
@@ -156,7 +157,20 @@ def build_system_instruction(df: pd.DataFrame) -> str:
 
 
 def get_client():
-    return genai.Client(api_key=st.session_state.api_key)
+    # IMPORTANT: the Client object must be kept alive in session_state.
+    # If it's only a local variable, Python garbage-collects it on the next
+    # Streamlit rerun, which closes its underlying httpx connection —
+    # causing "Cannot send a request, as the client has been closed."
+    # Re-use the same client across reruns; only recreate it if the API key
+    # or model changed.
+    key = (st.session_state.api_key, st.session_state.model_name)
+    if (
+        st.session_state.genai_client is None
+        or st.session_state.get("_genai_client_key") != key
+    ):
+        st.session_state.genai_client = genai.Client(api_key=st.session_state.api_key)
+        st.session_state["_genai_client_key"] = key
+    return st.session_state.genai_client
 
 
 def start_chat_session(df: pd.DataFrame):
@@ -340,7 +354,7 @@ with st.sidebar:
                 st.success(f"Loaded {uploaded_file.name} ({df_loaded.shape[0]} rows, {df_loaded.shape[1]} cols)")
 
     st.divider()
-    if st.button("🔄 Reset conversation", use_container_width=True):
+    if st.button("🔄 Reset conversation", width="stretch"):
         st.session_state.history = []
         st.session_state.chat = None
         st.rerun()
@@ -372,7 +386,7 @@ with st.expander("📋 First look at the data", expanded=len(st.session_state.hi
     c1.metric("Rows", df.shape[0])
     c2.metric("Columns", df.shape[1])
     c3.metric("Missing cells", int(df.isnull().sum().sum()))
-    st.dataframe(df.head(10), use_container_width=True)
+    st.dataframe(df.head(10), width="stretch")
 
 # Start (or resume) the Gemini chat session tied to this dataset
 if st.session_state.chat is None:
@@ -384,7 +398,7 @@ st.markdown("**💬 Try a client-style question, or type your own below:**")
 cols = st.columns(4)
 quick_prompt = None
 for i, q in enumerate(CLIENT_QUESTIONS):
-    if cols[i % 4].button(q, key=f"quick_{i}", use_container_width=True):
+    if cols[i % 4].button(q, key=f"quick_{i}", width="stretch"):
         quick_prompt = q
 
 st.divider()
