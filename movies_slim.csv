@@ -1,0 +1,251 @@
+movie_id,title,year,genre,imdb_rating,imdb_votes,duration,certificate,director_name
+tt0111161,The Shawshank Redemption,1994,Drama,9.3,"2,711,075",2h 22m,R,Frank Darabont
+tt0068646,The Godfather,1972,"Crime,Drama",9.2,"1,882,829",2h 55m,R,Francis Ford Coppola
+tt0468569,The Dark Knight,2008,"Action,Crime,Drama",9.0,"2,684,051",2h 32m,PG-13,Christopher Nolan
+tt0071562,The Godfather Part II,1974,"Crime,Drama",9.0,"1,285,350",3h 22m,R,Francis Ford Coppola
+tt0050083,12 Angry Men,1957,"Crime,Drama",9.0,"800,954",1h 36m,Approved,Sidney Lumet
+tt0108052,Schindler's List,1993,"Biography,Drama,History",9.0,"1,369,626",3h 15m,R,Steven Spielberg
+tt0167260,The Lord of the Rings: The Return of the King,2003,"Action,Adventure,Drama",9.0,"1,865,812",3h 21m,PG-13,Peter Jackson
+tt0110912,Pulp Fiction,1994,"Crime,Drama",8.9,"2,081,489",2h 34m,R,Quentin Tarantino
+tt0120737,The Lord of the Rings: The Fellowship of the Ring,2001,"Action,Adventure,Drama",8.8,"1,895,357",2h 58m,PG-13,Peter Jackson
+tt0060196,"The Good, the Bad and the Ugly",1966,"Adventure,Western",8.8,"769,389",2h 58m,Approved,Sergio Leone
+tt0109830,Forrest Gump,1994,"Drama,Romance",8.8,"2,106,590",2h 22m,PG-13,Robert Zemeckis
+tt0137523,Fight Club,1999,Drama,8.8,"2,154,995",2h 19m,R,David Fincher
+tt0167261,The Lord of the Rings: The Two Towers,2002,"Action,Adventure,Drama",8.8,"1,684,712",2h 59m,PG-13,Peter Jackson
+tt1375666,Inception,2010,"Action,Adventure,Sci-Fi",8.8,"2,381,879",2h 28m,PG-13,Christopher Nolan
+tt0080684,Star Wars: Episode V - The Empire Strikes Back,1980,"Action,Adventure,Fantasy",8.7,"1,305,762",2h 4m,PG,Irvin Kershner
+tt0133093,The Matrix,1999,"Action,Sci-Fi",8.7,"1,933,943",2h 16m,R,"Lana Wachowski,Lilly Wachowski"
+tt0099685,Goodfellas,1990,"Biography,Crime,Drama",8.7,"1,175,868",2h 25m,R,Martin Scorsese
+tt0073486,One Flew Over the Cuckoo's Nest,1975,Drama,8.7,"1,017,354",2h 13m,18+,Milos Forman
+tt0114369,Se7en,1995,"Crime,Drama,Mystery",8.6,"1,674,020",2h 7m,R,David Fincher
+tt0047478,Seven Samurai,1954,"Action,Drama",8.6,"349,499",3h 27m,Not Rated,Akira Kurosawa
+tt0038650,It's a Wonderful Life,1946,"Drama,Family,Fantasy",8.6,"467,723",2h 10m,PG,Frank Capra
+tt0102926,The Silence of the Lambs,1991,"Crime,Drama,Thriller",8.6,"1,449,285",1h 58m,R,Jonathan Demme
+tt0120815,Saving Private Ryan,1998,"Drama,War",8.6,"1,406,855",2h 49m,R,Steven Spielberg
+tt0317248,City of God,2002,"Crime,Drama",8.6,"763,772",2h 10m,R,"Fernando Meirelles,Kátia Lund"
+tt0816692,Interstellar,2014,"Adventure,Drama,Sci-Fi",8.6,"1,870,060",2h 49m,PG-13,Christopher Nolan
+tt0118799,Life Is Beautiful,1997,"Comedy,Drama,Romance",8.6,"703,472",1h 56m,PG-13,Roberto Benigni
+tt0120689,The Green Mile,1999,"Crime,Drama,Fantasy",8.6,"1,317,747",3h 9m,R,Frank Darabont
+tt0076759,Star Wars,1977,"Action,Adventure,Fantasy",8.6,"1,378,156",2h 1m,PG,George Lucas
+tt0103064,Terminator 2: Judgment Day,1991,"Action,Sci-Fi",8.6,"1,110,968",2h 17m,R,James Cameron
+tt0088763,Back to the Future,1985,"Adventure,Comedy,Sci-Fi",8.5,"1,221,395",1h 56m,PG,Robert Zemeckis
+tt0245429,Spirited Away,2001,"Animation,Adventure,Family",8.6,"776,114",2h 5m,PG,Hayao Miyazaki
+tt0253474,The Pianist,2002,"Biography,Drama,Music",8.5,"843,709",2h 30m,R,Roman Polanski
+tt0054215,Psycho,1960,"Horror,Mystery,Thriller",8.5,"679,428",1h 49m,R,Alfred Hitchcock
+tt6751668,Parasite,2019,"Drama,Thriller",8.5,"828,575",2h 12m,R,Bong Joon Ho
+tt0110413,Léon: The Professional,1994,"Action,Crime,Drama",8.5,"1,175,098",1h 50m,R,Luc Besson
+tt0110357,The Lion King,1994,"Animation,Adventure,Drama",8.5,"1,071,355",1h 28m,G,"Roger Allers,Rob Minkoff"
+tt0172495,Gladiator,2000,"Action,Adventure,Drama",8.5,"1,517,132",2h 35m,R,Ridley Scott
+tt0120586,American History X,1998,"Crime,Drama",8.5,"1,132,911",1h 59m,R,Tony Kaye
+tt0407887,The Departed,2006,"Crime,Drama,Thriller",8.5,"1,339,871",2h 31m,R,Martin Scorsese
+tt0114814,The Usual Suspects,1995,"Crime,Drama,Mystery",8.5,"1,095,033",1h 46m,R,Bryan Singer
+tt0482571,The Prestige,2006,"Drama,Mystery,Sci-Fi",8.5,"1,348,423",2h 10m,PG-13,Christopher Nolan
+tt2582802,Whiplash,2014,"Drama,Music",8.5,"883,875",1h 46m,R,Damien Chazelle
+tt0034583,Casablanca,1942,"Drama,Romance,War",8.5,"577,758",1h 42m,PG,Michael Curtiz
+tt0095327,Grave of the Fireflies,1988,"Animation,Drama,War",8.5,"282,456",1h 29m,Not Rated,Isao Takahata
+tt0056058,Harakiri,1962,"Action,Drama,Mystery",8.6,"59,327",2h 13m,Not Rated,Masaki Kobayashi
+tt1675434,The Intouchables,2011,"Biography,Comedy,Drama",8.5,"870,273",1h 52m,R,"Olivier Nakache,Éric Toledano"
+tt0027977,Modern Times,1936,"Comedy,Drama,Romance",8.5,"245,671",1h 27m,G,Charles Chaplin
+tt0064116,Once Upon a Time in the West,1968,Western,8.5,"333,809",2h 45m,PG-13,Sergio Leone
+tt0095765,Cinema Paradiso,1988,"Drama,Romance",8.5,"264,969",2h 35m,PG,Giuseppe Tornatore
+tt0047396,Rear Window,1954,"Mystery,Thriller",8.5,"497,077",1h 52m,PG,Alfred Hitchcock
+tt0078748,Alien,1979,"Horror,Sci-Fi",8.5,"892,980",1h 57m,R,Ridley Scott
+tt0021749,City Lights,1931,"Comedy,Drama,Romance",8.5,"186,874",1h 27m,G,Charles Chaplin
+tt0078788,Apocalypse Now,1979,"Drama,Mystery,War",8.5,"675,280",2h 27m,R,Francis Ford Coppola
+tt0209144,Memento,2000,"Mystery,Thriller",8.4,"1,250,995",1h 53m,R,Christopher Nolan
+tt1853728,Django Unchained,2012,"Drama,Western",8.4,"1,576,491",2h 45m,R,Quentin Tarantino
+tt0082971,Raiders of the Lost Ark,1981,"Action,Adventure",8.4,"976,471",1h 55m,PG,Steven Spielberg
+tt0910970,WALL·E,2008,"Animation,Adventure,Family",8.4,"1,129,098",1h 38m,G,Andrew Stanton
+tt0405094,The Lives of Others,2006,"Drama,Mystery,Thriller",8.4,"393,367",2h 17m,R,Florian Henckel von Donnersmarck
+tt0043014,Sunset Blvd.,1950,"Drama,Film-Noir",8.4,"224,680",1h 50m,Passed,Billy Wilder
+tt0050825,Paths of Glory,1957,"Drama,War",8.4,"200,117",1h 28m,Approved,Stanley Kubrick
+tt0081505,The Shining,1980,"Drama,Horror",8.4,"1,035,594",2h 26m,R,Stanley Kubrick
+tt0032553,The Great Dictator,1940,"Comedy,Drama,War",8.4,"226,622",2h 5m,G,Charles Chaplin
+tt4154756,Avengers: Infinity War,2018,"Action,Adventure,Sci-Fi",8.4,"1,101,309",2h 29m,PG-13,"Anthony Russo,Joe Russo"
+tt0051201,Witness for the Prosecution,1957,"Crime,Drama,Mystery",8.4,"127,648",1h 56m,Approved,Billy Wilder
+tt0090605,Aliens,1986,"Action,Adventure,Sci-Fi",8.4,"725,492",2h 17m,R,James Cameron
+tt4633694,Spider-Man: Into the Spider-Verse,2018,"Animation,Action,Adventure",8.4,"545,563",1h 57m,PG,"Bob Persichetti,Peter Ramsey,Rodney Rothman"
+tt0169547,American Beauty,1999,Drama,8.4,"1,164,109",2h 2m,R,Sam Mendes
+tt0057012,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,"Comedy,War",8.4,"495,942",1h 35m,PG,Stanley Kubrick
+tt1345836,The Dark Knight Rises,2012,"Action,Drama,Thriller",8.4,"1,722,652",2h 44m,PG-13,Christopher Nolan
+tt0364569,Oldboy,2003,"Action,Drama,Mystery",8.4,"588,066",2h,R,Park Chan-wook
+tt0361748,Inglourious Basterds,2009,"Adventure,Drama,War",8.3,"1,470,409",2h 33m,R,Quentin Tarantino
+tt0086879,Amadeus,1984,"Biography,Drama,Music",8.4,"405,763",2h 40m,PG,Milos Forman
+tt2380307,Coco,2017,"Animation,Adventure,Comedy",8.4,"521,455",1h 45m,PG,"Lee Unkrich,Adrian Molina"
+tt0114709,Toy Story,1995,"Animation,Adventure,Comedy",8.3,"1,005,591",1h 21m,G,John Lasseter
+tt7286456,Joker,2019,"Crime,Drama,Thriller",8.4,"1,320,088",2h 2m,R,Todd Phillips
+tt0112573,Braveheart,1995,"Biography,Drama,History",8.4,"1,046,807",2h 58m,R,Mel Gibson
+tt0082096,The Boat,1981,"Drama,War",8.4,"253,534",2h 29m,,Wolfgang Petersen
+tt4154796,Avengers: Endgame,2019,"Action,Adventure,Drama",8.4,"1,155,245",3h 1m,PG-13,"Anthony Russo,Joe Russo"
+tt0119698,Princess Mononoke,1997,"Animation,Action,Adventure",8.3,"400,859",2h 14m,PG-13,Hayao Miyazaki
+tt0087843,Once Upon a Time in America,1984,"Crime,Drama",8.3,"356,429",3h 49m,R,Sergio Leone
+tt0119217,Good Will Hunting,1997,"Drama,Romance",8.3,"987,400",2h 6m,R,Gus Van Sant
+tt5311514,Your Name.,2016,"Animation,Drama,Fantasy",8.4,"276,854",1h 46m,TV-PG,Makoto Shinkai
+tt0045152,Singin' in the Rain,1952,"Comedy,Musical,Romance",8.3,"246,258",1h 43m,G,"Stanley Donen,Gene Kelly"
+tt1187043,3 Idiots,2009,"Comedy,Drama",8.4,"406,004",2h 50m,PG-13,Rajkumar Hirani
+tt0180093,Requiem for a Dream,2000,Drama,8.3,"852,453",1h 42m,Unrated,Darren Aronofsky
+tt0057565,High and Low,1963,"Crime,Drama,Mystery",8.4,"46,714",2h 23m,Not Rated,Akira Kurosawa
+tt0435761,Toy Story 3,2010,"Animation,Adventure,Comedy",8.3,"845,636",1h 43m,G,Lee Unkrich
+tt8267604,Capernaum,2018,Drama,8.4,"92,871",2h 6m,R,Nadine Labaki
+tt0086190,Star Wars: Episode VI - Return of the Jedi,1983,"Action,Adventure,Fantasy",8.3,"1,065,020",2h 11m,PG,Richard Marquand
+tt0062622,2001: A Space Odyssey,1968,"Adventure,Sci-Fi",8.3,"677,258",2h 29m,G,Stanley Kubrick
+tt0338013,Eternal Sunshine of the Spotless Mind,2004,"Drama,Romance,Sci-Fi",8.3,"1,020,184",1h 48m,R,Michel Gondry
+tt0105236,Reservoir Dogs,1992,"Crime,Thriller",8.3,"1,031,010",1h 39m,R,Quentin Tarantino
+tt0091251,Come and See,1985,"Drama,Thriller,War",8.4,"83,154",2h 22m,Not Rated,Elem Klimov
+tt2106476,The Hunt,2012,Drama,8.3,"336,241",1h 55m,R,Thomas Vinterberg
+tt0033467,Citizen Kane,1941,"Drama,Mystery",8.3,"446,582",1h 59m,PG,Orson Welles
+tt0022100,M,1931,"Crime,Mystery,Thriller",8.3,"160,158",1h 39m,Passed,Fritz Lang
+tt0056172,Lawrence of Arabia,1962,"Adventure,Biography,Drama",8.3,"297,811",3h 38m,Approved,David Lean
+tt0053125,North by Northwest,1959,"Action,Adventure,Mystery",8.3,"331,797",2h 16m,Approved,Alfred Hitchcock
+tt0044741,Ikiru,1952,Drama,8.3,"80,354",2h 23m,Not Rated,Akira Kurosawa
+tt0052357,Vertigo,1958,"Mystery,Romance,Thriller",8.3,"407,006",2h 8m,PG,Alfred Hitchcock
+tt0053604,The Apartment,1960,"Comedy,Drama,Romance",8.3,"184,423",2h 5m,Approved,Billy Wilder
+tt0211915,Amélie,2001,"Comedy,Romance",8.3,"763,676",2h 2m,R,Jean-Pierre Jeunet
+tt0066921,A Clockwork Orange,1971,"Crime,Sci-Fi",8.3,"839,209",2h 16m,X,Stanley Kubrick
+tt0036775,Double Indemnity,1944,"Crime,Drama,Film-Noir",8.3,"159,388",1h 47m,Passed,Billy Wilder
+tt0093058,Full Metal Jacket,1987,"Drama,War",8.3,"750,781",1h 56m,R,Stanley Kubrick
+tt0086250,Scarface,1983,"Crime,Drama",8.3,"853,851",2h 50m,R,Brian De Palma
+tt8503618,Hamilton,2020,"Biography,Drama,History",8.4,"98,498",2h 40m,PG-13,Thomas Kail
+tt1255953,Incendies,2010,"Drama,Mystery",8.3,"181,146",2h 11m,R,Denis Villeneuve
+tt0113277,Heat,1995,"Action,Crime,Drama",8.3,"664,714",2h 50m,R,Michael Mann
+tt0056592,To Kill a Mockingbird,1962,"Crime,Drama",8.3,"319,590",2h 9m,Approved,Robert Mulligan
+tt0070735,The Sting,1973,"Comedy,Crime,Drama",8.3,"266,706",2h 9m,PG,George Roy Hill
+tt1049413,Up,2009,"Animation,Adventure,Comedy",8.3,"1,056,335",1h 36m,PG,"Pete Docter,Bob Peterson"
+tt1745960,Top Gun: Maverick,2022,"Action,Drama",8.3,"541,686",2h 10m,PG-13,Joseph Kosinski
+tt1832382,A Separation,2011,Drama,8.3,"247,485",2h 3m,PG-13,Asghar Farhadi
+tt0017136,Metropolis,1927,"Drama,Sci-Fi",8.3,"176,619",2h 33m,Not Rated,Fritz Lang
+tt0075314,Taxi Driver,1976,"Crime,Drama",8.2,"848,183",1h 54m,R,Martin Scorsese
+tt0119488,L.A. Confidential,1997,"Crime,Drama,Mystery",8.2,"588,331",2h 18m,R,Curtis Hanson
+tt0095016,Die Hard,1988,"Action,Thriller",8.2,"893,737",2h 12m,R,John McTiernan
+tt0208092,Snatch,2000,"Comedy,Crime",8.2,"865,529",1h 42m,R,Guy Ritchie
+tt0097576,Indiana Jones and the Last Crusade,1989,"Action,Adventure",8.2,"763,451",2h 7m,PG-13,Steven Spielberg
+tt0040522,Bicycle Thieves,1948,Drama,8.3,"165,771",1h 29m,Not Rated,Vittorio De Sica
+tt0986264,Like Stars on Earth,2007,"Drama,Family",8.3,"196,015",2h 45m,PG,"Aamir Khan,Amole Gupte"
+tt8579674,1917,2019,"Action,Drama,War",8.2,"606,899",1h 59m,R,Sam Mendes
+tt0363163,Downfall,2004,"Biography,Drama,History",8.2,"359,460",2h 36m,R,Oliver Hirschbiegel
+tt5074352,Dangal,2016,"Action,Biography,Drama",8.3,"194,680",2h 41m,Not Rated,Nitesh Tiwari
+tt0059578,For a Few Dollars More,1965,Western,8.2,"260,221",2h 12m,R,Sergio Leone
+tt0372784,Batman Begins,2005,"Action,Crime,Drama",8.2,"1,486,582",2h 20m,PG-13,Christopher Nolan
+tt0012349,The Kid,1921,"Comedy,Drama,Family",8.3,"128,080",1h 8m,Passed,Charles Chaplin
+tt0053291,Some Like It Hot,1959,"Comedy,Music,Romance",8.2,"270,788",2h 1m,Passed,Billy Wilder
+tt10272386,The Father,2020,"Drama,Mystery",8.2,"161,650",1h 37m,PG-13,Florian Zeller
+tt0042192,All About Eve,1950,Drama,8.2,"132,775",2h 18m,Passed,Joseph L. Mankiewicz
+tt0993846,The Wolf of Wall Street,2013,"Biography,Comedy,Crime",8.2,"1,437,576",3h,R,Martin Scorsese
+tt6966692,Green Book,2018,"Biography,Comedy,Drama",8.2,"505,845",2h 10m,PG-13,Peter Farrelly
+tt0055031,Judgment at Nuremberg,1961,"Drama,War",8.3,"78,828",2h 59m,Approved,Stanley Kramer
+tt0089881,Ran,1985,"Action,Drama,War",8.2,"127,572",2h 42m,R,Akira Kurosawa
+tt0112641,Casino,1995,"Crime,Drama",8.2,"528,069",2h 58m,R,Martin Scorsese
+tt0120382,The Truman Show,1998,"Comedy,Drama",8.2,"1,100,115",1h 43m,PG,Peter Weir
+tt0457430,Pan's Labyrinth,2006,"Drama,Fantasy,War",8.2,"675,640",1h 58m,R,Guillermo del Toro
+tt0469494,There Will Be Blood,2007,Drama,8.2,"595,129",2h 38m,R,Paul Thomas Anderson
+tt0105695,Unforgiven,1992,"Drama,Western",8.2,"416,587",2h 10m,R,Clint Eastwood
+tt0167404,The Sixth Sense,1999,"Drama,Mystery,Thriller",8.2,"1,001,996",1h 47m,PG-13,M. Night Shyamalan
+tt1130884,Shutter Island,2010,"Mystery,Thriller",8.2,"1,338,496",2h 18m,R,Martin Scorsese
+tt0268978,A Beautiful Mind,2001,"Biography,Drama",8.2,"941,601",2h 15m,PG-13,Ron Howard
+tt0107290,Jurassic Park,1993,"Action,Adventure,Sci-Fi",8.2,"1,001,679",2h 7m,PG-13,Steven Spielberg
+tt0055630,Yojimbo,1961,"Action,Drama,Thriller",8.2,"124,578",1h 50m,Not Rated,Akira Kurosawa
+tt0040897,The Treasure of the Sierra Madre,1948,"Adventure,Drama,Western",8.2,"126,496",2h 6m,Passed,John Huston
+tt0071853,Monty Python and the Holy Grail,1975,"Adventure,Comedy,Fantasy",8.2,"547,240",1h 31m,PG,"Terry Gilliam,Terry Jones"
+tt0057115,The Great Escape,1963,"Adventure,Drama,History",8.2,"247,453",2h 52m,Approved,John Sturges
+tt0477348,No Country for Old Men,2007,"Crime,Drama,Thriller",8.2,"987,934",2h 2m,R,"Ethan Coen,Joel Coen"
+tt0266697,Kill Bill: Vol. 1,2003,"Action,Crime,Drama",8.2,"1,128,256",1h 51m,R,Quentin Tarantino
+tt0042876,Rashomon,1950,"Crime,Drama,Mystery",8.2,"170,943",1h 28m,Not Rated,Akira Kurosawa
+tt10872600,Spider-Man: No Way Home,2021,"Action,Adventure,Fantasy",8.2,"776,160",2h 28m,PG-13,Jon Watts
+tt0084787,The Thing,1982,"Horror,Mystery,Sci-Fi",8.2,"432,488",1h 49m,R,John Carpenter
+tt0266543,Finding Nemo,2003,"Animation,Adventure,Comedy",8.2,"1,055,095",1h 40m,G,"Andrew Stanton,Lee Unkrich"
+tt0080678,The Elephant Man,1980,"Biography,Drama",8.2,"244,992",2h 4m,PG,David Lynch
+tt0071315,Chinatown,1974,"Drama,Mystery,Thriller",8.2,"331,260",2h 10m,R,Roman Polanski
+tt0081398,Raging Bull,1980,"Biography,Drama,Sport",8.2,"358,918",2h 9m,R,Martin Scorsese
+tt0434409,V for Vendetta,2005,"Action,Drama,Sci-Fi",8.2,"1,131,766",2h 12m,R,James McTeigue
+tt0031381,Gone with the Wind,1939,"Drama,Romance,War",8.2,"319,434",3h 58m,Passed,"Victor Fleming,George Cukor,Sam Wood"
+tt0120735,"Lock, Stock and Two Smoking Barrels",1998,"Action,Comedy,Crime",8.2,"589,353",1h 47m,R,Guy Ritchie
+tt2096673,Inside Out,2015,"Animation,Adventure,Comedy",8.2,"725,352",1h 35m,PG,"Pete Docter,Ronnie Del Carmen"
+tt0046912,Dial M for Murder,1954,"Crime,Thriller",8.2,"178,568",1h 45m,PG,Alfred Hitchcock
+tt1305806,The Secret in Their Eyes,2009,"Drama,Mystery,Romance",8.2,"212,280",2h 9m,R,Juan José Campanella
+tt0347149,Howl's Moving Castle,2004,"Animation,Adventure,Family",8.2,"403,630",1h 59m,PG,Hayao Miyazaki
+tt5027774,"Three Billboards Outside Ebbing, Missouri",2017,"Comedy,Crime,Drama",8.1,"518,061",1h 55m,R,Martin McDonagh
+tt0050212,The Bridge on the River Kwai,1957,"Adventure,Drama,War",8.2,"223,494",2h 41m,PG,David Lean
+tt0117951,Trainspotting,1996,Drama,8.1,"694,832",1h 33m,R,Danny Boyle
+tt1392214,Prisoners,2013,"Crime,Drama,Mystery",8.1,"731,875",2h 33m,R,Denis Villeneuve
+tt1291584,Warrior,2011,"Action,Drama,Sport",8.2,"478,019",2h 20m,PG-13,Gavin O'Connor
+tt0116282,Fargo,1996,"Crime,Thriller",8.1,"686,205",1h 38m,R,"Joel Coen,Ethan Coen"
+tt1205489,Gran Torino,2008,Drama,8.1,"783,124",1h 56m,R,Clint Eastwood
+tt0096283,My Neighbor Totoro,1988,"Animation,Comedy,Family",8.1,"346,498",1h 26m,G,Hayao Miyazaki
+tt0264464,Catch Me If You Can,2002,"Biography,Crime,Drama",8.1,"1,002,869",2h 21m,PG-13,Steven Spielberg
+tt0405159,Million Dollar Baby,2004,"Drama,Sport",8.1,"694,061",2h 12m,PG-13,Clint Eastwood
+tt0118849,Children of Heaven,1997,"Drama,Family,Sport",8.2,"75,814",1h 29m,PG,Majid Majidi
+tt0083658,Blade Runner,1982,"Action,Drama,Sci-Fi",8.1,"779,533",1h 57m,R,Ridley Scott
+tt0015864,The Gold Rush,1925,"Adventure,Comedy,Drama",8.1,"112,833",1h 35m,Passed,Charles Chaplin
+tt4729430,Klaus,2019,"Animation,Adventure,Comedy",8.2,"162,886",1h 36m,PG,"Sergio Pablos,Carlos Martínez López"
+tt0112471,Before Sunrise,1995,"Drama,Romance",8.1,"315,432",1h 41m,R,Richard Linklater
+tt1201607,Harry Potter and the Deathly Hallows: Part 2,2011,"Adventure,Family,Fantasy",8.1,"889,002",2h 10m,PG-13,David Yates
+tt2024544,12 Years a Slave,2013,"Biography,Drama,History",8.1,"709,077",2h 14m,R,Steve McQueen
+tt0047296,On the Waterfront,1954,"Crime,Drama,Thriller",8.1,"157,105",1h 48m,Approved,Elia Kazan
+tt0052618,Ben-Hur,1959,"Adventure,Drama",8.1,"242,433",3h 32m,G,William Wyler
+tt2278388,The Grand Budapest Hotel,2014,"Adventure,Comedy,Crime",8.1,"824,947",1h 39m,R,Wes Anderson
+tt2267998,Gone Girl,2014,"Drama,Mystery,Thriller",8.1,"996,836",2h 29m,R,David Fincher
+tt0050986,Wild Strawberries,1957,"Drama,Romance",8.1,"108,900",1h 31m,Not Rated,Ingmar Bergman
+tt0017925,The General,1926,"Action,Adventure,Comedy",8.1,"92,925",1h 7m,Passed,"Clyde Bruckman,Buster Keaton"
+tt0107207,In the Name of the Father,1993,"Biography,Crime,Drama",8.1,"178,055",2h 13m,R,Jim Sheridan
+tt0041959,The Third Man,1949,"Film-Noir,Mystery,Thriller",8.1,"173,749",1h 33m,Approved,Carol Reed
+tt0072684,Barry Lyndon,1975,"Adventure,Drama,War",8.1,"171,559",3h 5m,PG,Stanley Kubrick
+tt0077416,The Deer Hunter,1978,"Drama,War",8.1,"343,516",3h 3m,R,Michael Cimino
+tt2119532,Hacksaw Ridge,2016,"Biography,Drama,History",8.1,"538,727",2h 19m,R,Mel Gibson
+tt0046268,The Wages of Fear,1953,"Adventure,Drama,Thriller",8.2,"62,539",2h 11m,Not Rated,Henri-Georges Clouzot
+tt0353969,Memories of Murder,2003,"Crime,Drama,Mystery",8.1,"190,911",2h 12m,Not Rated,Bong Joon Ho
+tt0015324,Sherlock Jr.,1924,"Action,Comedy,Romance",8.2,"51,440",45m,Passed,Buster Keaton
+tt3011894,Wild Tales,2014,"Comedy,Drama,Thriller",8.1,"202,365",2h 2m,R,Damián Szifron
+tt0031679,Mr. Smith Goes to Washington,1939,"Comedy,Drama",8.1,"116,787",2h 9m,Passed,Frank Capra
+tt1392190,Mad Max: Fury Road,2015,"Action,Adventure,Sci-Fi",8.1,"1,016,838",2h,R,George Miller
+tt0978762,Mary and Max,2009,"Animation,Comedy,Drama",8.1,"179,400",1h 32m,Not Rated,Adam Elliot
+tt0050976,The Seventh Seal,1957,"Drama,Fantasy",8.1,"187,934",1h 36m,Not Rated,Ingmar Bergman
+tt0892769,How to Train Your Dragon,2010,"Animation,Action,Adventure",8.1,"751,071",1h 38m,PG,"Dean DeBlois,Chris Sanders"
+tt0198781,"Monsters, Inc.",2001,"Animation,Adventure,Comedy",8.1,"920,862",1h 32m,G,"Pete Docter,David Silverman,Lee Unkrich"
+tt3170832,Room,2015,"Drama,Thriller",8.1,"426,926",1h 58m,R,Lenny Abrahamson
+tt0073195,Jaws,1975,"Adventure,Thriller",8.1,"615,988",2h 4m,PG,Steven Spielberg
+tt0097165,Dead Poets Society,1989,"Comedy,Drama",8.1,"501,186",2h 8m,PG,Peter Weir
+tt0118715,The Big Lebowski,1998,"Comedy,Crime",8.1,"818,246",1h 57m,R,"Joel Coen,Ethan Coen"
+tt0046438,Tokyo Story,1953,Drama,8.2,"63,208",2h 16m,Not Rated,Yasujirô Ozu
+tt0019254,The Passion of Joan of Arc,1928,"Biography,Drama,History",8.2,"56,448",1h 54m,Passed,Carl Theodor Dreyer
+tt1950186,Ford v Ferrari,2019,"Action,Biography,Drama",8.1,"406,540",2h 32m,PG-13,James Mangold
+tt0395169,Hotel Rwanda,2004,"Biography,Drama,History",8.1,"359,447",2h 1m,PG-13,Terry George
+tt0075148,Rocky,1976,"Drama,Sport",8.1,"587,888",2h,PG,John G. Avildsen
+tt0091763,Platoon,1986,"Drama,War",8.1,"419,386",2h,R,Oliver Stone
+tt0382932,Ratatouille,2007,"Animation,Adventure,Comedy",8.1,"752,323",1h 51m,G,"Brad Bird,Jan Pinkava"
+tt1895587,Spotlight,2015,"Biography,Crime,Drama",8.1,"476,580",2h 9m,R,Tom McCarthy
+tt0088247,The Terminator,1984,"Action,Sci-Fi",8.1,"876,163",1h 47m,R,James Cameron
+tt3315342,Logan,2017,"Action,Drama,Sci-Fi",8.1,"775,780",2h 17m,R,James Mangold
+tt0092005,Stand by Me,1986,"Adventure,Drama",8.1,"411,166",1h 29m,13+,Rob Reiner
+tt1979320,Rush,2013,"Action,Biography,Drama",8.1,"486,172",2h 3m,R,Ron Howard
+tt0074958,Network,1976,Drama,8.1,"161,819",2h 1m,R,Sidney Lumet
+tt0381681,Before Sunset,2004,"Drama,Romance",8.1,"269,934",1h 20m,R,Richard Linklater
+tt0758758,Into the Wild,2007,"Adventure,Biography,Drama",8.1,"629,900",2h 28m,R,Sean Penn
+tt0032138,The Wizard of Oz,1939,"Adventure,Family,Fantasy",8.1,"406,068",1h 42m,G,"Victor Fleming,George Cukor,Mervyn LeRoy,Norman Taurog,Richard Thorpe,King Vidor"
+tt0036868,The Best Years of Our Lives,1946,"Drama,Romance,War",8.1,"66,194",2h 50m,Approved,William Wyler
+tt0048473,Pather Panchali,1955,Drama,8.3,"34,328",2h 5m,Not Rated,Satyajit Ray
+tt0107048,Groundhog Day,1993,"Comedy,Drama,Fantasy",8.1,"643,209",1h 41m,PG,Harold Ramis
+tt0070047,The Exorcist,1973,Horror,8.1,"415,311",2h 2m,R,William Friedkin
+tt0035446,To Be or Not to Be,1942,"Comedy,Romance,War",8.2,"38,888",1h 39m,Passed,Ernst Lubitsch
+tt0317705,The Incredibles,2004,"Animation,Action,Adventure",8.0,"750,055",1h 55m,PG,Brad Bird
+tt0113247,La haine,1995,"Crime,Drama",8.1,"178,165",1h 38m,Not Rated,Mathieu Kassovitz
+tt0325980,Pirates of the Caribbean: The Curse of the Black Pearl,2003,"Action,Adventure,Fantasy",8.1,"1,140,601",2h 23m,PG-13,Gore Verbinski
+tt0058946,The Battle of Algiers,1966,"Drama,War",8.1,"61,641",2h 1m,Not Rated,Gillo Pontecorvo
+tt1028532,Hachi: A Dog's Tale,2009,"Biography,Drama,Family",8.1,"290,951",1h 33m,G,Lasse Hallström
+tt0032551,The Grapes of Wrath,1940,Drama,8.1,"95,146",2h 9m,Passed,John Ford
+tt15097216,Jai Bhim,2021,"Crime,Drama,Mystery",8.8,"204,646",2h 44m,TV-MA,T.J. Gnanavel
+tt0476735,My Father and My Son,2005,"Drama,Family",8.2,"87,525",1h 52m,Not Rated,Çagan Irmak
+tt0245712,Amores Perros,2000,"Drama,Thriller",8.1,"243,622",2h 34m,R,Alejandro G. Iñárritu
+tt0032976,Rebecca,1940,"Drama,Film-Noir,Mystery",8.1,"139,329",2h 10m,Approved,Alfred Hitchcock
+tt0061512,Cool Hand Luke,1967,"Crime,Drama",8.1,"179,672",2h 7m,GP,Stuart Rosenberg
+tt4016934,The Handmaiden,2016,"Drama,Romance,Thriller",8.1,"153,302",2h 25m,Not Rated,Park Chan-wook
+tt0053198,The 400 Blows,1959,"Crime,Drama",8.1,"120,571",1h 39m,Not Rated,François Truffaut
+tt0059742,The Sound of Music,1965,"Biography,Drama,Family",8.1,"240,905",2h 52m,G,Robert Wise
+tt0025316,It Happened One Night,1934,"Comedy,Romance",8.1,"106,037",1h 45m,Passed,Frank Capra
+tt0060827,Persona,1966,"Drama,Thriller",8.1,"121,826",1h 23m,Not Rated,Ingmar Bergman
+tt0079470,Life of Brian,1979,Comedy,8.0,"404,989",1h 34m,R,Terry Jones
+tt0129167,The Iron Giant,1999,"Animation,Action,Adventure",8.1,"204,618",1h 26m,PG,Brad Bird
+tt0071411,Dersu Uzala,1975,"Adventure,Biography,Drama",8.2,"31,167",2h 22m,G,Akira Kurosawa
+tt1454029,The Help,2011,Drama,8.1,"466,011",2h 26m,PG-13,Tate Taylor
+tt0103639,Aladdin,1992,"Animation,Adventure,Comedy",8.0,"429,219",1h 30m,G,"Ron Clements,John Musker"
+tt0083987,Gandhi,1982,"Biography,Drama,History",8.0,"234,688",3h 11m,PG,Richard Attenborough
+tt0099348,Dances with Wolves,1990,"Adventure,Drama,Western",8.0,"271,823",3h 1m,PG-13,Kevin Costner
