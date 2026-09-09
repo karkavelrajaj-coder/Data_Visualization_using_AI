@@ -7,6 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # -----------------------------
 # Page Configuration
 # -----------------------------
+
 st.set_page_config(
     page_title="Movie Recommendation System",
     page_icon="🎬",
@@ -17,9 +18,12 @@ st.set_page_config(
 # -----------------------------
 # Load Dataset
 # -----------------------------
+
 @st.cache_data
 def load_data():
+
     df = pd.read_csv("movies_cleaned.csv")
+
     return df
 
 
@@ -29,22 +33,26 @@ df = load_data()
 # -----------------------------
 # Create TF-IDF Matrix
 # -----------------------------
-tfidf = TfidfVectorizer()
 
-tfidf_matrix = tfidf.fit_transform(
-    df["genre"].fillna("")
-)
+@st.cache_resource
+def create_tfidf(data):
+
+    tfidf = TfidfVectorizer()
+
+    matrix = tfidf.fit_transform(
+        data["genre"].fillna("")
+    )
+
+    return matrix
 
 
-# -----------------------------
-# Calculate Cosine Similarity
-# -----------------------------
-similarity = cosine_similarity(tfidf_matrix)
+tfidf_matrix = create_tfidf(df)
 
 
 # -----------------------------
 # App Title
 # -----------------------------
+
 st.title("🎬 Movie Recommendation System")
 
 st.write(
@@ -56,6 +64,7 @@ st.write(
 # -----------------------------
 # Select Movies
 # -----------------------------
+
 movie_list = df["title"].tolist()
 
 selected_movies = st.multiselect(
@@ -67,6 +76,7 @@ selected_movies = st.multiselect(
 # -----------------------------
 # Number of Recommendations
 # -----------------------------
+
 num_recommendations = st.slider(
     "Number of recommendations",
     min_value=3,
@@ -78,32 +88,55 @@ num_recommendations = st.slider(
 # -----------------------------
 # Recommendation Function
 # -----------------------------
+
 def recommend_movies(selected_movies, n=5):
 
     selected_indices = []
 
     for movie in selected_movies:
-        index = df[df["title"] == movie].index[0]
+
+        index = df.index[df["title"] == movie][0]
+
         selected_indices.append(index)
 
-    # Calculate average similarity
-    scores = similarity[selected_indices].mean(axis=0)
+
+    # Calculate similarity ONLY for selected movies
+
+    selected_similarity = cosine_similarity(
+        tfidf_matrix[selected_indices],
+        tfidf_matrix
+    )
+
+
+    # Average similarity
+
+    scores = selected_similarity.mean(axis=0)
+
 
     # Sort movies by similarity
+
     recommended_indices = scores.argsort()[::-1]
+
 
     recommendations = []
 
+
     for index in recommended_indices:
 
-        # Don't recommend movies already watched
+        # Don't recommend watched movies
+
         if df.iloc[index]["title"] in selected_movies:
+
             continue
+
 
         recommendations.append(index)
 
+
         if len(recommendations) == n:
+
             break
+
 
     return df.iloc[recommendations]
 
@@ -111,6 +144,7 @@ def recommend_movies(selected_movies, n=5):
 # -----------------------------
 # Generate Recommendations
 # -----------------------------
+
 if st.button("🍿 Recommend Movies"):
 
     if len(selected_movies) == 0:
@@ -126,7 +160,9 @@ if st.button("🍿 Recommend Movies"):
             num_recommendations
         )
 
+
         st.subheader("🎯 Recommended Movies")
+
 
         for _, movie in recommendations.iterrows():
 
